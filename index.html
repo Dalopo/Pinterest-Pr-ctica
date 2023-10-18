@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mi replica en HTML de la página web de pinterest.">
+  <title>Pinterest</title>
+  <link rel="icon" href="./assets/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">
+        <img src="./assets/favicon.jpg" alt="logo Pinterest" width="24" height="24">
+      </a>
+      <a href="#">Inicio</a>
+      <a href="#">Explorar</a>
+      <a href="#">Crear</a>
+      <form action="buscar.php" method="get">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="16" height="16" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+          <path d="M21 21l-6 -6" />
+        </svg>
+        <input type="search" name="busqueda" id="busqueda" placeholder="Buscar">
+      </form>
+      <a href="#" title="Notificaciones">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.80 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z" stroke-width="0" fill="currentColor" />
+          <path d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z" stroke-width="0" fill="currentColor" />
+        </svg>
+      </a>
+      <a href="#" title="Mensajes">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle-2-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M5.821 4.91c3.898 -2.765 9.469 -2.539 13.073 .536c3.667 3.127 4.168 8.238 1.152 11.897c-2.842 3.447 -7.965 4.583 -12.231 2.805l-.232 -.101l-4.375 .931l-.075 .013l-.11 .009l-.113 -.004l-.044 -.005l-.11 -.02l-.105 -.034l-.1 -.044l-.076 -.042l-.108 -.077l-.081 -.074l-.073 -.083l-.053 -.075l-.065 -.115l-.042 -.106l-.031 -.113l-.013 -.075l-.009 -.11l.004 -.113l.005 -.044l.02 -.11l.022 -.072l1.15 -3.451l-.022 -.036c-2.21 -3.747 -1.209 -8.392 2.411 -11.118l.23 -.168z" stroke-width="0" fill="currentColor" />
+        </svg>
+      </a>
+      <a href="#" title="Tu perfil">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+          <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+          <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+        </svg>
+      </a>
+      <details title="Cuentas y más opciones">
+        <summary><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M6 9l6 6l6 -6" />
+        </svg></summary>
+        <ul>
+          <li>Actualmente en</li>
+          <ul>
+            <li>
+              <a href="#">
+                <ul>
+                  <li>        
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                      </svg>
+                  </li>
+                  <li>David Lorenzo</li>
+                  <li>Personal</li>
+                  <li>david@gmail.com</li>
+                </ul>
+              </a>
+            </li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-check" width="12" height="12" viewBox="0 0 24 24" stroke-width="4" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M5 12l5 5l10 -10" />
+            </svg>
+          </ul>
+          <li>Tus cuentas
+            <ul>
+              <li><a href="#">Añadir cuenta</a></li>
+              <li><a href="#">Convertir en cuenta para empresas</a></li>
+            </ul>
+          </li>
+          <li>Más opciones
+            <ul>
+              <li><a href="#">Centro para denuncias e infracciones</a></li>
+              <li><a href="#">Ajustes</a></li>
+              <li><a href="#">Optimiza tu feed de inicio</a></li>
+              <li><a href="#">Instala la aplicación Windows</a></li>
+              <li><a href="#">Tus derechos de privacidad</a></li>
+              <li>
+                <a href="#">Obtener ayuda</a>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                  <path d="M11 13l9 -9" />
+                  <path d="M15 4h5v5" />
+                </svg>
+              </li>
+              <li>
+                <a href="#">Ver Términos del servicio</a>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                  <path d="M11 13l9 -9" />
+                  <path d="M15 4h5v5" />
+                </svg>
+              </li>
+              <li>
+                <a href="#">Ver Política de privacidad</a>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                  <path d="M11 13l9 -9" />
+                  <path d="M15 4h5v5" />
+                </svg>
+              </li>
+              <li>
+                <a href="#">Valora la versión beta</a>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                  <path d="M11 13l9 -9" />
+                  <path d="M15 4h5v5" />
+                </svg>
+              </li>
+              <li><a href="#">Cerrar sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+      </details>
+    </nav>
+  </header>
+  <main>
+    <ul class="lista-imagenes">
+      <li>
+        <img src="https://i.pinimg.com/originals/c9/8d/6d/c98d6d6a301a42b5c6cc4bb06a9d7625.jpg" alt="Santa Claus reemplaza al muñeco de halloween haciendo referencia que ya llega la Navidad" width="250">
+      </li>
+      <li>
+        <img src="https://i.pinimg.com/564x/07/db/d2/07dbd219c255c69d55333c9ca358c8b3.jpg" alt="Fantasma pidiendo caramelos en Halloween" width="250">
+      </li>
+      <li>
+        <img src="https://i.pinimg.com/564x/18/9e/96/189e9684a2537d132333180d6a4c1024.jpg" alt="Contiene un muñeco con la frase no entendí" width="250">
+      </li>
+      <li>
+        <img src="https://i.pinimg.com/564x/0c/b3/49/0cb349c3e643e443f0d5f2f015d0b08e.jpg" alt="Muñeco con un cartel que pone: ¡Tu puedes mi amorcito!" width="250">
+      </li>
+      <li>
+        <img src="https://i.pinimg.com/564x/3d/e6/6b/3de66bd466fc7778bce934badf817510.jpg" alt="Un bloc de notas en el que pone: Notita para recordarte que me gustas <3" width="250">
+      </li>
+      <li>
+        <img src="https://i.pinimg.com/564x/af/af/fd/afaffdee98cc45a830b5335b9b9f0e76.jpg" alt="Muñeco rezando con la frase: Dios dame paciencia" width="250">
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <details>
+      <summary>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-question-mark" width="24" height="24" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
+          <path d="M12 19l0 .01" />
+        </svg>
+      </summary>
+      <ul>
+        <li>
+          <a href="#">Visita el Centro de asistencia</a>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+            <path d="M11 13l9 -9" />
+            <path d="M15 4h5v5" />
+          </svg>
+        </li>
+        <li>
+          <a href="#">Crear widget</a>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="3" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+            <path d="M11 13l9 -9" />
+            <path d="M15 4h5v5" />
+          </svg>
+        </li>
+        <li><a href="#">Info</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Empresas</a></li>
+        <li><a href="#">Empleos</a></li>
+        <li><a href="#">Desarrolladores</a></li>
+        <li><a href="#">Eliminaciones</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Anuncios personalizados</a></li>
+        <li><a href="#">Tus derechos de privacidad</a></li>
+        <li><a href="#">Condiciones</a></li>
+      </ul>
+    </details>
+  </footer>
+</body>
+</html>
